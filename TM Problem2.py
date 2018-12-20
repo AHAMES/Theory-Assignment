@@ -12,7 +12,7 @@ Created on Tue Dec 18 01:32:57 2018
 @author: Ahmed
 """
 
-#solves 7*x+1
+#solves x^2
 x= raw_input('Enter your string in this format #x#: ')
 
 turingMachine={0:{1:{'direction':1,'nextState':1,'read':'1','write':'x'},
