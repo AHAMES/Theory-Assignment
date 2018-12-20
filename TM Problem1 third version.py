@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Dec 18 01:32:57 2018
+Created on Thu Dec 20 21:39:29 2018
 
 @author: Ahmed
 """
 
-#solves 7*x+1
 x= raw_input('Enter your string in this format #x#: ')
 
-             
 turingMachine={0:{1:{'direction':1,'nextState':1,'read':'1','write':'x'},
                   2:{'direction':-1,'nextState':10,'read':'#','write':'1'},'accept':False},
                1:{1:{'direction':1,'nextState':1,'read':'1','write':'1'},
@@ -23,12 +21,8 @@ turingMachine={0:{1:{'direction':1,'nextState':1,'read':'1','write':'x'},
                8:{1:{'direction':-1,'nextState':8,'read':'1','write':'1'},
                   2:{'direction':-1,'nextState':9,'read':'#','write':'#'},'accept':False},
                9:{1:{'direction':-1,'nextState':9,'read':'1','write':'1'},
-                   2:{'direction':1,'nextState':0,'read':'x','write':'x'},'accept':False},
-               10:{1:{'direction':-1,'nextState':10,'read':'x','write':'1'},
-                  2:{'direction':1,'nextState':11,'read':'#','write':'0'},'accept':False},
-               11:{'accept':True}}      
-             
-
+                   2:{'direction':1,'nextState':0,'read':'x','write':'1'},'accept':False},
+               10:{'accept':True}}  
 tape=list(x)
 index=1
 currentState=0
